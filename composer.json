@@ -1,0 +1,16 @@
+{
+    "name": "egarciahz/airam",
+    "description": "A PHP Framework",
+    "type": "project",
+    "require": {
+        "egarciahz/airam-framework": "^0.0.1@beta"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ezequiel Garcia",
+            "email": "egarcia.informatic.ing@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta"
+}
