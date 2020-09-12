@@ -2,9 +2,26 @@
     "name": "egarciahz/airam",
     "description": "A PHP Framework",
     "type": "project",
-    "require": {
-        "egarciahz/airam-framework": "^0.0.1@beta"
+    "keywords": [
+        "framework",
+        "skeleton",
+        "template",
+        "airam"
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
     },
+    "require": {
+        "egarciahz/airam-framework": "dev-nightly"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/egarciahz/airam-framework.git"
+        }
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -12,5 +29,8 @@
             "email": "egarcia.informatic.ing@gmail.com"
         }
     ],
-    "minimum-stability": "beta"
+    "minimum-stability": "alpha",
+    "config": {
+        "bin-dir": ".bin"
+    }
 }

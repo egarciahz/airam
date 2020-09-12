@@ -2,17 +2,18 @@
 include '../vendor/autoload.php';
 
 use App\Http\RouterModule;
-use function Core\applicationFactory;
+use function Airam\applicationFactory;
 
 date_default_timezone_set('UTC');
+$root = __DIR__ . "/../";
 
-$app = applicationFactory(__DIR__ . "/../");
+$app = applicationFactory($root);
 
-$app->addDefinitions(getenv('ROOT_DIR') . "/app/config/app.php");
+$app->addDefinitions($root . "app/config/app.php");
 
 $app->addRouterModule(RouterModule::class);
 
-if (getenv("ENVIROMENT") === 'production') {
+if (getenv("ENVIRONMENT") === 'production') {
     $app->enableProdMode();
 }
 

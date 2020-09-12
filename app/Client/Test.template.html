@@ -1,10 +1,22 @@
-Title: {{title}} <br/>
+<main>
+    <h3>Template Metadata</h3>
+    <pre>
+        {{#Template}}
+            File: {{file}}
+            Name: {{name}}
+        {{/Template}}
+    </pre>
 
-Property {{property}}<br/>
+    <h3>Template Locals</h3>
+    <h5>{{title}}</h5>
+    <strong>{{name}}</strong>
+    <p>{{description}}</p>
+    <pre> {{named_args param=title }} </pre>
+    <br />
 
-Method with Arguments {{hi name }}<br/>
 
-Method with Named Arguments {{method param=name }}<br/>
-
-Test the dependency injection {{injection_test}}<br/>
-
+    <h3>Template helpers</h3>
+    <b>Partial: </b>{{>Hello}} <br>
+    <b>Helper as single file:</b> {{atdate}}<br>
+    <b>Helper as collection:</b> {{{example}}}<br>
+</main>

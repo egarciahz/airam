@@ -2,7 +2,7 @@
 
 namespace App\Client\Base;
 
-use Core\Template\{Template,Layout as TLayout};
+use Airam\Template\{Template,Layout as TLayout};
 
 class Layout
 {

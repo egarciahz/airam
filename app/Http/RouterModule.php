@@ -2,29 +2,27 @@
 
 namespace App\Http;
 
-use Core\Http\RouterSplInterface;
-use Core\Http\Service\RouterProvider;
-use Core\Template\Middleware\TemplateHandler;
+use Airam\Http\Lib\RouterSplInterface;
+use Airam\Commons\ApplicationService;
+use Airam\Template\Render\Renderable;
 
 class RouterModule implements RouterSplInterface
 {
-    /** @var RouterProvider $provider */
+    use Renderable;
+
+    /** @var ApplicationService $provider */
     private $provider;
 
-    public function __construct(RouterProvider $provider)
+    public function __construct(ApplicationService $provider)
     {
         $this->provider = $provider;
+        $this->configure([
+            "layout" => \App\Client\Base\Layout::class
+        ]);
     }
 
     public function register(): void
     {
-
-        $templateHandler = $this->provider->app()->get(TemplateHandler::class);
-        $this->provider->pushMiddleware($templateHandler);
-        $this->provider->router()->configure([
-            "layout" => \App\Client\Base\Layout::class
-        ]);
-
         $this->provider->register(__DIR__ . '/router.php');
     }
 }
