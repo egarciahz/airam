@@ -1,0 +1,15 @@
+/vendor
+/phpunit.xml
+/.idea
+/.vscode
+/.cache
+/.airam
+/.bin
+/public/assets
+composer.phar
+composer.lock
+package-lock.json
+.DS_Store
+Thumbs.db
+.phpunit.result.cache
+node_modules
