@@ -1,0 +1,38 @@
+{
+  "name": "airam-skeleton",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "authors": [
+    {
+      "name": "Ezequiel Garcia",
+      "email": "egarcia.informatic.ing@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "astroturf": "^0.10.4",
+    "autoprefixer": "^9.8.6",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^4.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.1.0",
+    "mini-css-extract-plugin": "^0.11.1",
+    "postcss": "^7.0.32",
+    "postcss-loader": "^4.0.1",
+    "postcss-nested": "^4.2.3",
+    "precss": "^4.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
