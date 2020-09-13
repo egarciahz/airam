@@ -1,6 +1,6 @@
 {
     "name": "egarciahz/airam",
-    "description": "A PHP Framework",
+    "description": "Airam is an easy-to-start web development framework, focused on providing the developer with an understandable environment using familiar template syntax and Component-oriented flow, router-centric, and looking similar to the early days of Angular2.",
     "type": "project",
     "keywords": [
         "framework",
