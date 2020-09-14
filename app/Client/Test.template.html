@@ -1,22 +1,37 @@
 <main>
-    <h3>Template Metadata</h3>
+    <h3>Template Metadata Information</h3>
+    <small>runtime metadata of template</small>
     <pre>
         {{#Template}}
             File: {{file}}
-            Name: {{name}}
+            Namespace name: {{namespace}}
+            Class Name: {{name}}
         {{/Template}}
     </pre>
-
-    <h3>Template Locals</h3>
+    
+    <hr>
+    <h3>Local Properties</h3>
+    
     <h5>{{title}}</h5>
     <strong>{{name}}</strong>
     <p>{{description}}</p>
-    <pre> {{named_args param=title }} </pre>
-    <br />
+    
+    <hr>
+    <h3>Local Methods</h3>
+    <b>Calling greets method</b>
+    <pre> {{greets name}}</pre> </br>
 
+    <b>Method with argument names</b>
+    <pre> {{named_args param=title }} </pre> <br />
 
+    <hr>
     <h3>Template helpers</h3>
-    <b>Partial: </b>{{>Hello}} <br>
-    <b>Helper as single file:</b> {{atdate}}<br>
-    <b>Helper as collection:</b> {{{example}}}<br>
+    <b>Helper in a single file:</b> {{atdate}}<br>
+    <b>Helper in an array of functions:</b> {{{raw}}}<br>
+
+    <hr>
+    <h3>Partials</h3>
+    <b>Default context: </b>{{>Hello}} <br>
+    <b>Changing context: </b>{{>Hello Template}} <br>
+    <b>Defined preperty: </b>{{>Hello name="The name"}} <br>
 </main>
