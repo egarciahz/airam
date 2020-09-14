@@ -1,7 +1,7 @@
 <?php
 
 return [
-    "example" => function () {
-        return "<i>Example</i>";
+    "raw" => function () {
+        return "HTML output using <code>{{{helper}}}</code> syntax";
     }
 ];

@@ -25,8 +25,8 @@ class Test
         return var_dump($args['hash']);
     }
 
-    public function method($var1)
+    public function greets($name)
     {
-        return  "Hello {$var1}!!";
+        return  "Hi {$name}!!";
     }
 }
