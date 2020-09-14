@@ -29,8 +29,10 @@
             "email": "egarcia.informatic.ing@gmail.com"
         }
     ],
-    "minimum-stability": "alpha",
     "config": {
-        "bin-dir": ".bin"
-    }
+        "bin-dir": ".bin",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
