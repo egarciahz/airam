@@ -5,6 +5,7 @@ namespace App\Http;
 use Airam\Http\Lib\RouterSplInterface;
 use Airam\Commons\ApplicationService;
 use Airam\Template\Render\Renderable;
+use Middlewares\Utils\CallableHandler;
 
 class RouterModule implements RouterSplInterface
 {
@@ -24,5 +25,9 @@ class RouterModule implements RouterSplInterface
     public function register(): void
     {
         $this->provider->register(__DIR__ . '/router.php');
+        $this->provider->pushMiddleware(new CallableHandler(function ($r) {
+            error_log("custom middleware");
+            return $r;
+        }));
     }
 }
