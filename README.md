@@ -4,13 +4,11 @@
 </p>
 
 <p align="center">
-
 <a href="https://packagist.org/packages/egarciahz/airam"><img src="https://poser.pugx.org/egarciahz/airam/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/egarciahz/airam"><img src="https://poser.pugx.org/egarciahz/airam/d/total.svg" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/egarciahz/airam"><img src="https://poser.pugx.org/egarciahz/airam/dependents.svg" alt="Dependents"></a>
 <a href="https://packagist.org/packages/egarciahz/airam"><img src="https://poser.pugx.org/egarciahz/airam/v/unstable.svg" alt="Latest Unstable Version"></a>
 <a href="https://packagist.org/packages/egarciahz/airam"><img src="https://poser.pugx.org/egarciahz/airam/license.svg" alt="License"></a>
-
 </p>
 
 ## About Airam
